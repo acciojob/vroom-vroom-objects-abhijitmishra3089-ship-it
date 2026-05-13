@@ -2,9 +2,9 @@
 function Car(make, model) {
 	this.make=make;
 	this.model=model;
-}
-Car.prototype.getMakeModal()=function () {
+getMakeModal() {
 	return `${this.make} ${this.model}`;
+}
 }
 function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model);
